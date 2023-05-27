@@ -6,6 +6,8 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script></script>
@@ -21,19 +23,19 @@
         <span class="update">Last Updated:<p id="day"></p></span>
         <p class="weather">Partly Cloudy</p>
 
-        <div class="sun">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBaxuhF-6RF5gT_1TcD08twQXc-jx37_vPyBGXWF7qDw&usqp=CAU&ec=48600113"
-                width="60px" class="image" alt="loading issue">
-            <p class="number">34</p>
-            <p class="celsius"><a href="#" class="Link">°C</a> | </p>
-            <p class="fahrenheit"><a href="#" class="Link">°F</a></p>
+        <div class="clearfix weather-temperature">
+            <img src=""
+                width="60px" class="image" alt="">
+            <p class="number"></p>
+            <p id="Link"><a href="#" id="celsius" class="active">°C</a> | </p>
+            <p id="Link"><a href="#" id="fahrenheit">°F</a></p>
             <ul class="list">
                 <li class="sort">Humidity:<p id="humid"></p>%</li>
                 <li class="sort">Wind:<p id="wind"></p>km/h</li>
             </ul>
         </div>
     </div>
-    <p id="para"><a href="https://github.com/Gayathri2113/WeatherApp">Open Source Code</a> by main</p>
+    <p id="para"><a href="https://github.com/Gayathri2113/WeatherApp" target="_blank">Open Source Code</a> by main</p>
     <script src="index.js"></script>
 </body>
 

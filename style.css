@@ -10,8 +10,8 @@ form {
 }
 
 #type {
-    margin: 5px 15px 5px 10px;
-    padding: 13px 270px 13px 10px;
+    margin: 5px 25px 5px 10px;
+    padding: 13px 240px 13px 10px;
     border: 1px solid rgb(207, 202, 195);
     border-radius: 4px;
 }
@@ -25,7 +25,7 @@ form {
     border-radius: 5px;
 }
 
-.sun {
+.weather-temperature {
     display: flex;
 }
 
@@ -34,6 +34,7 @@ form {
     margin: 3px 10px 3px 10px;
     padding: 1px 5px 5px 1px;
     color: rgb(121, 116, 116);
+    text-transform: capitalize;
 }
 
 #day {
@@ -41,7 +42,8 @@ form {
     padding: 0px 5px 0px 0px;
     color: rgb(121, 116, 116);
 }
-.update{
+
+.update {
     display: flex;
     margin: 0px 10px 0px 5px;
     padding: 0px 10px 0px 8px;
@@ -61,12 +63,12 @@ form {
 }
 
 .image {
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 0px 0px;
+    margin: 5px 2px 5px 2px;
 }
 
 .number {
-    font-size: 60px;
+    font-size: 45px;
     padding: 5px 5px 5px 5px;
     margin: 5px 5px 5px 5px;
 }
@@ -77,23 +79,36 @@ form {
     margin: 16px 5px 5px 60px;
     color: rgb(121, 116, 116);
 }
-.sort{
+
+.sort {
     display: flex;
 }
-#humid,#wind{
+
+#humid,
+#wind {
     margin: 0 auto;
 }
-.celsius {
+
+#celsius {
     margin: 10px 0px 30px 0px;
     padding: 10px 0px 10px 0px;
 }
 
-.fahrenheit {
+#fahrenheit {
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 5px;
 }
 
-.Link {
+#Link {
+    text-decoration: none;
+    margin: 13px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+.active {
+    color: rgb(121, 116, 116);
+    cursor: default;
+}
+.active:hover {
     text-decoration: none;
 }
 
@@ -101,6 +116,4 @@ form {
     margin: 2px 0px 0px 110px;
     padding: 0px 0px 0px 110px;
 }
-a{
-    text-decoration-line: none;
-}
+
