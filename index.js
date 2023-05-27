@@ -46,3 +46,34 @@ fahrenheit.addEventListener("click", changetempToFahren);
 
 let celsius = document.querySelector(".celsius");
 celsius.addEventListener("click", changetempTocelsius);
+
+function showTemperature(response){
+    let temperature = document.querySelector(".number")
+    let humid = document.querySelector("#humid");
+    humid.innerHTML = response.data.main.humidity;
+    let wind = document.querySelector("#wind");
+    wind.innerHTML = response.data.wind.speed;
+    let description = document.querySelector(".weather");
+    description.innerHTML = response.data.weather[0].description;
+    console.log(response.data);
+    console.log(response.data.weather[0].description);
+
+    let icon = response.data.weather[0].icon;
+    let icons = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    console.log(icons);
+}
+
+function showCountry(event){
+    event.preventDefault();
+    let city = document.querySelector("#type");
+    let cityname = city.value;
+    let country = document.querySelector(".country");
+    country.innerHTML = cityname;
+    let apikey = "36459a8242aec3971626f0447d4eb713";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${apikey}&units=metric`
+    axios.get(apiUrl).then(showTemperature);
+    console.log(cityname);
+}
+
+let btn = document.querySelector(".btn");
+btn.addEventListener("click",showCountry);

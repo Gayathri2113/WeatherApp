@@ -2,6 +2,7 @@
     border: 1px solid black;
     border-radius: 10px;
     margin: 20px 237px 0px 220px;
+    max-width: 600px;
 }
 
 form {
@@ -9,8 +10,8 @@ form {
 }
 
 #type {
-    margin: 5px 20px 5px 10px;
-    padding: 13px 290px 13px 10px;
+    margin: 5px 15px 5px 10px;
+    padding: 13px 270px 13px 10px;
     border: 1px solid rgb(207, 202, 195);
     border-radius: 4px;
 }
@@ -35,13 +36,15 @@ form {
     color: rgb(121, 116, 116);
 }
 
-/* .date {
-    display: flex;
-} */
-
 #day {
     margin: 0px 0px 0px 5px;
-    padding: 0px 5px 0px 8px;
+    padding: 0px 5px 0px 0px;
+    color: rgb(121, 116, 116);
+}
+.update{
+    display: flex;
+    margin: 0px 10px 0px 5px;
+    padding: 0px 10px 0px 8px;
     color: rgb(121, 116, 116);
 }
 
@@ -74,7 +77,12 @@ form {
     margin: 16px 5px 5px 60px;
     color: rgb(121, 116, 116);
 }
-
+.sort{
+    display: flex;
+}
+#humid,#wind{
+    margin: 0 auto;
+}
 .celsius {
     margin: 10px 0px 30px 0px;
     padding: 10px 0px 10px 0px;

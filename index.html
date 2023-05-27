@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -17,7 +18,7 @@
             <button class="btn">Search</button>
         </form>
         <p class="country">Telangana, India</p>
-        <p id="day"></p>
+        <span class="update">Last Updated:<p id="day"></p></span>
         <p class="weather">Partly Cloudy</p>
 
         <div class="sun">
@@ -27,14 +28,13 @@
             <p class="celsius"><a href="#" class="Link">°C</a> | </p>
             <p class="fahrenheit"><a href="#" class="Link">°F</a></p>
             <ul class="list">
-                <li id="prep">Precipitation: 0%</li>
-                <li>Humidity: 77%</li>
-                <li>Wind: 8 km/h</li>
+                <li class="sort">Humidity:<p id="humid"></p>%</li>
+                <li class="sort">Wind:<p id="wind"></p>km/h</li>
             </ul>
         </div>
     </div>
-        <p id="para"><a href="https://github.com/Gayathri2113/WeatherApp">Open Source Code</a> by main</p>
-        <script src="index.js"></script>
+    <p id="para"><a href="https://github.com/Gayathri2113/WeatherApp">Open Source Code</a> by main</p>
+    <script src="index.js"></script>
 </body>
 
 </html>
