@@ -57,7 +57,6 @@ let btn = document.querySelector(".btn");
 btn.addEventListener("click", showCountry);
 
 function displayForecast(response) {
-    console.log(response.data.list);
     let forecast  = response.data.list;
     let forecastElement = document.querySelector("#forecast");
 
@@ -81,9 +80,7 @@ function displayForecast(response) {
     forecastElement.innerHTML = forecastHTML;
 }
 function getForecast(coordinates) {
-    console.log(coordinates);
     let apikey = "5f472b7acba333cd8a035ea85a0d4d4c";
     let apiurl = `https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apikey}&units=metric`;
-    console.log(apiurl);
     axios.get(apiurl).then(displayForecast);
 }
