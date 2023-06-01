@@ -60,6 +60,7 @@ form {
     margin: 0px 10px 0px 5px;
     padding: 0px 10px 0px 8px;
     color: rgb(121, 116, 116);
+    text-transform: capitalize;
 }
 
 .image {
@@ -94,11 +95,6 @@ form {
     padding: 10px 0px 10px 0px;
 }
 
-#fahrenheit {
-    margin: 10px 0px 10px 0px;
-    padding: 10px 0px 10px 5px;
-}
-
 #Link {
     text-decoration: none;
     margin: 13px 0px 10px 0px;
@@ -116,4 +112,17 @@ form {
     margin: 2px 0px 0px 110px;
     padding: 0px 0px 0px 110px;
 }
+.weather-forecast{
+    text-align: center;
+}
 
+.weather-forecast-date{
+    font-size: 10px;
+    opacity:0.6;
+}
+.weather-forecast-temperatures{
+    font-size: 13px;
+}
+.weather-forecast-temperatures-min {
+    opacity: 0.5;
+}
